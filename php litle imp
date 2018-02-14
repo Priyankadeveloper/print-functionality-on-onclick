@@ -1,0 +1,73 @@
+<?php
+echo stristr("Hello world!",'wor')."<br/>";
+
+echo substr("Hello world",4)."<br/>";
+
+$arr = array('Hello','World!','Beautiful','Day!');
+echo "<br/>";
+echo implode("-",$arr);
+
+// case-insensitive constant name
+define("GREETING", "Welcome to W3Schools.com!", true);
+echo "<br/>";
+
+echo greeting."<br/>";
+
+
+echo $t = date("H");
+echo "<p>The hour (of the server) is " . $t; 
+echo ", and will give the following message:</p>";
+
+if ($t < "10") {
+    echo "Have a good morning!";
+} elseif ($t < "20") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+
+
+
+$user = "someone@example.com";
+$hash = ezmlm_hash($user);
+
+echo "The hash value for $user is: $hash.";
+
+
+ $z = array(array("p",1,2),array("r",5,6),array("i",5,6)); 
+
+ for($x=0; $x<3; $x++)
+ {
+ 	echo "<br/><br/><b>the row is : $x</b>";
+ 	echo "<ul>";
+ 	for($y=0; $y<3; $y++)
+ 	{
+ 		echo "<li>".$z[$x][$y] ."</li>";
+ 	}
+
+ 	echo "</ul>";
+ }
+
+echo date("H");
+echo date("l");
+
+//date_default_timezone_set("America/New_York");
+echo "The time is " . date("h:i:sa");
+
+
+echo "The time is " . date("h:i:sa");
+
+
+$d=mktime(11, 14, 54, 8, 12, 2014);
+echo "Created date is " . date("Y-m-d h:i:sa", $d);
+
+$timezone  = + 5.5 ;
+echo gmdate("Y/m/j H:i:s", time() + 3600*($timezone+date("I"))); 
+
+
+$myfile = fopen("ssafsdfsdf", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("ssafsdfsdf"));
+fclose($myfile);
+
+
+?>
